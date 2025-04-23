@@ -322,7 +322,7 @@ You can try an evaluate the following list expressions one by one and see what G
 𝝺> [10,9..1]
 ...
 
-𝝺> [10,9..1]
+𝝺> [10,9..1] -- twice the same?
 ...
 
 𝝺> [1,3..]
@@ -383,7 +383,7 @@ Tuples are fixed-size sequences of elements of arbitrary types, e.g. `(Int, Char
 Their element can be accessed by pattern matching
 ```haskell
 first (x,_,_) = x
-second (_,x,_) = y
+second (_,x,_) = x
 third (_,_,x) = x
 ```
 Pattern matching can be nested
